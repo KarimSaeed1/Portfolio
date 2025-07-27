@@ -40,7 +40,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-5 h-5" />,
       title: "LinkedIn", 
-      url: "https://www.linkedin.com/in/kareem-saeed-a4869a195/",
+      url: "https://www.linkedin.com/in/kareem-saeed-a4869a195?utm_source=share&utm_campaign=share_via&utm_=profile&utm_medium=android_app",
       username: "Kareem Saeed"
     }
   ];
@@ -114,64 +114,36 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Quick Contact Actions */}
           <div className="animate-slideInRight">
             <Card className="glass-effect">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2">
-                        Full Name
-                      </label>
-                      <Input
-                        id="name"
-                        placeholder="Your full name"
-                        className="bg-background/50 border-border focus:border-primary"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2">
-                        Email Address
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="your.email@example.com"
-                        className="bg-background/50 border-border focus:border-primary"
-                      />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                      Subject
-                    </label>
-                    <Input
-                      id="subject"
-                      placeholder="What's this about?"
-                      className="bg-background/50 border-border focus:border-primary"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell me about your project or just say hello..."
-                      rows={6}
-                      className="bg-background/50 border-border focus:border-primary resize-none"
-                    />
-                  </div>
-                  
-                  <Button variant="hero" size="lg" className="w-full animate-glow">
-                    <Send className="w-5 h-5" />
-                    Send Message
+                <h3 className="text-2xl font-bold mb-6">Quick Contact</h3>
+                <p className="text-muted-foreground mb-8">
+                  Choose your preferred way to get in touch with me
+                </p>
+                
+                <div className="space-y-4">
+                  <Button variant="hero" size="lg" className="w-full animate-glow" asChild>
+                    <a href="mailto:karimsaeed816@gmail.com">
+                      <Send className="w-5 h-5" />
+                      Send Email Message
+                    </a>
                   </Button>
-                </form>
+                  
+                  <Button variant="tech" size="lg" className="w-full" asChild>
+                    <a href="https://wa.me/201550527057" target="_blank" rel="noopener noreferrer">
+                      <Phone className="w-5 h-5" />
+                      Schedule WhatsApp Call
+                    </a>
+                  </Button>
+                </div>
+                
+                <div className="mt-8 p-4 bg-muted/20 rounded-lg">
+                  <p className="text-sm text-muted-foreground text-center">
+                    <strong>Response Time:</strong> Usually within 24 hours
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -194,7 +166,7 @@ const Contact = () => {
                   </a>
                 </Button>
                 <Button variant="glass" size="lg" asChild>
-                  <a href="tel:+201550527057">
+                  <a href="https://wa.me/201550527057" target="_blank" rel="noopener noreferrer">
                     <Phone className="w-5 h-5" />
                     Schedule a Call
                   </a>

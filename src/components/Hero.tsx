@@ -42,26 +42,36 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button variant="hero" size="xl" className="animate-glow">
-                <Github className="w-5 h-5" />
-                View My Work
+              <Button variant="hero" size="xl" className="animate-glow" asChild>
+                <a href="https://github.com/KarimSaeed1" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-5 h-5" />
+                  View My Work
+                </a>
               </Button>
-              <Button variant="glass" size="xl">
-                <Mail className="w-5 h-5" />
-                Get In Touch
+              <Button variant="glass" size="xl" asChild>
+                <a href="mailto:karimsaeed816@gmail.com">
+                  <Mail className="w-5 h-5" />
+                  Get In Touch
+                </a>
               </Button>
             </div>
 
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">
-              <Button variant="ghost" size="icon" className="hover:text-primary-glow transition-colors">
-                <Github className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hover:text-primary-glow transition-colors" asChild>
+                <a href="https://github.com/KarimSaeed1" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary-glow transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hover:text-primary-glow transition-colors" asChild>
+                <a href="https://www.linkedin.com/in/kareem-saeed-a4869a195?utm_source=share&utm_campaign=share_via&utm_=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary-glow transition-colors">
-                <Mail className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hover:text-primary-glow transition-colors" asChild>
+                <a href="mailto:karimsaeed816@gmail.com">
+                  <Mail className="w-5 h-5" />
+                </a>
               </Button>
             </div>
           </div>

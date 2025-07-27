@@ -9,48 +9,40 @@ const Skills = () => {
       icon: <Code className="w-6 h-6" />,
       title: "Programming Languages",
       color: "tech-blue",
-      skills: ["JavaScript", "TypeScript", "Node.js", "PHP", "Python", "C++", "HTML", "CSS"]
+      skills: ["JavaScript", "TypeScript", "Node.js", "PHP", "Python", "C++", "HTML5", "CSS3", "Java", "Dart"]
     },
     {
       icon: <Cog className="w-6 h-6" />,
       title: "Frameworks & Libraries", 
       color: "success",
-      skills: ["Express.js", "Nest.js", "Laravel", "React", "Socket.IO", "Apollo", "Prisma", "Mongoose"]
+      skills: ["Express.js", "Nest.js", "Laravel", "React.js", "Socket.IO", "Apollo GraphQL", "Prisma", "Mongoose", "Flutter", "Next.js"]
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Databases",
+      title: "Databases & Query Languages",
       color: "tech-purple", 
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "GraphQL", "NoSQL", "SQL"]
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "GraphQL", "NoSQL", "SQL", "Redis", "Firebase Firestore"]
     },
     {
       icon: <Cloud className="w-6 h-6" />,
-      title: "DevOps & Cloud",
+      title: "DevOps & Cloud Services",
       color: "tech-orange",
-      skills: ["AWS Cloud Services", "Docker", "Firebase", "CI/CD", "Apache", "Git & Github"]
+      skills: ["AWS Cloud Services", "Docker", "Firebase", "CI/CD", "Apache", "Git & GitHub", "Linux", "Vercel", "Heroku"]
     },
     {
       icon: <Wrench className="w-6 h-6" />,
-      title: "Tools & Testing",
+      title: "Development Tools & Testing",
       color: "warning",
-      skills: ["Visual Studio", "VS Code", "Postman", "Unit Testing", "Jest", "Mocha", "NPM", "Composer"]
+      skills: ["Visual Studio", "VS Code", "Postman", "Unit Testing", "Jest", "Mocha", "NPM", "Composer", "Android Studio", "RESTful APIs"]
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Soft Skills & Methodologies",
       color: "destructive",
-      skills: ["Problem Solving", "Agile", "Software Design", "OOP", "Design Patterns", "Leadership", "Creative Thinking"]
+      skills: ["Problem Solving", "Agile Development", "Software Design", "OOP", "Design Patterns", "Team Leadership", "Creative Thinking", "Project Management"]
     }
   ];
 
-  const certifications = [
-    "CS50: Computer Science Courses and Programs from Harvard",
-    "Udacity: EgFwd Embedded Professional Track Nanodegree", 
-    "Udemy: The Complete Node.js Developer Course (3rd Edition)",
-    "ITI Maharatech: Computer Networks Fundamentals",
-    "Coursera: Programming for Everybody (Python)",
-    "Udacity: Digital Marketing Professional Nanodegree Program"
-  ];
 
   return (
     <section id="skills" className="py-20 bg-muted/20">
@@ -77,7 +69,7 @@ const Skills = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="bg-accent/50 hover:bg-accent transition-colors text-xs">
+                    <Badge key={skillIndex} variant="secondary" className="bg-primary/10 text-foreground hover:bg-primary/20 transition-colors text-xs font-medium border border-primary/20">
                       {skill}
                     </Badge>
                   ))}
@@ -87,55 +79,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Languages */}
-        <div className="mb-16 animate-fadeInUp">
-          <Card className="glass-effect">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <span className="text-gradient">Languages</span>
-              </h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="flex items-center justify-between p-4 bg-muted/20 rounded-lg">
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">🇪🇬</span>
-                    <span className="font-semibold">Arabic</span>
-                  </div>
-                  <Badge variant="secondary" className="bg-success/20 text-success border-success/30">
-                    Native
-                  </Badge>
-                </div>
-                <div className="flex items-center justify-between p-4 bg-muted/20 rounded-lg">
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">🇬🇧</span>
-                    <span className="font-semibold">English</span>
-                  </div>
-                  <Badge variant="secondary" className="bg-tech-blue/20 text-tech-blue border-tech-blue/30">
-                    Professional
-                  </Badge>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Certifications */}
-        <div className="animate-fadeInUp">
-          <Card className="glass-effect">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">
-                Certifications & <span className="text-gradient">Learning</span>
-              </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-start gap-3 p-4 bg-muted/20 rounded-lg hover:bg-muted/30 transition-colors">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-muted-foreground">{cert}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );

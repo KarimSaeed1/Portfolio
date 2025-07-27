@@ -9,6 +9,16 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Sunnah Books Platform",
+      description: "University graduation project for Prophet's Hadiths books with multilingual support, chat system, and blog features using modern tech stack.",
+      technologies: ["Node.js", "Express.js", "MongoDB", "Socket.io", "React.js", "Flutter"],
+      category: "educational",
+      live: null,
+      github: null,
+      impact: "Cross-platform religious education",
+      year: "2024"
+    },
+    {
       title: "Ayat Workflow",
       description: "Robust workflow management platform designed to handle and orchestrate complex processes across various task types and operational flows. Reduced process time by 40%.",
       technologies: ["Node.js", "Express.js", "GraphQL", "PostgreSQL", "Prisma", "TypeScript"],
@@ -109,16 +119,6 @@ const Projects = () => {
       year: "2023"
     },
     {
-      title: "Sunnah Books Platform",
-      description: "University graduation project for Prophet's Hadiths books with multilingual support, chat system, and blog features.",
-      technologies: ["Node.js", "Express.js", "MongoDB", "Socket.io", "React.js", "Flutter"],
-      category: "educational",
-      live: null,
-      github: null,
-      impact: "Cross-platform religious education",
-      year: "2024"
-    },
-    {
       title: "Gap Analysis Platform",
       description: "Survey website for gathering citizen opinions on global digital transformation for strategic insights.",
       technologies: ["Node.js", "Express.js", "MongoDB"],
@@ -135,6 +135,7 @@ const Projects = () => {
     { id: 'enterprise', label: 'Enterprise', count: projects.filter(p => p.category === 'enterprise').length },
     { id: 'ecommerce', label: 'E-Commerce', count: projects.filter(p => p.category === 'ecommerce').length },
     { id: 'real-estate', label: 'Real Estate', count: projects.filter(p => p.category === 'real-estate').length },
+    { id: 'educational', label: 'Educational', count: projects.filter(p => p.category === 'educational').length },
     { id: 'industrial', label: 'Industrial', count: projects.filter(p => p.category === 'industrial').length },
   ];
 
@@ -253,11 +254,10 @@ const Projects = () => {
         </div>
 
         {/* Statistics */}
-        <div className="mt-16 grid md:grid-cols-4 gap-6 animate-fadeInUp">
+        <div className="mt-16 grid md:grid-cols-3 gap-6 animate-fadeInUp">
           {[
             { number: "20+", label: "Projects Completed", icon: <Zap className="w-6 h-6" /> },
             { number: "4+", label: "Years Experience", icon: <Calendar className="w-6 h-6" /> },
-            { number: "5M+", label: "Users Served", icon: <Users className="w-6 h-6" /> },
             { number: "15+", label: "Technologies", icon: <Code className="w-6 h-6" /> }
           ].map((stat, index) => (
             <Card key={index} className="glass-effect text-center">

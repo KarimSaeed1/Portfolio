@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Menu, X, Download } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,8 @@ const Navigation = () => {
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
+    { id: 'languages', label: 'Languages' },
+    { id: 'certificates', label: 'Certificates' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -69,16 +72,20 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Resume Button */}
-          <div className="hidden md:block">
-            <Button variant="hero" size="sm" className="animate-glow">
-              <Download className="w-4 h-4" />
-              Resume
+          {/* Theme Toggle & Resume Button */}
+          <div className="hidden md:flex items-center gap-2">
+            <ThemeToggle />
+            <Button variant="hero" size="sm" className="animate-glow" asChild>
+              <a href="https://drive.google.com/file/d/1aMemj8RLIIIbuNeXbrPxPvAf0OPSO1BS/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                <Download className="w-4 h-4" />
+                Resume
+              </a>
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button & theme toggle */}
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"
@@ -107,9 +114,11 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="pt-2">
-                <Button variant="hero" size="sm" className="w-full">
-                  <Download className="w-4 h-4" />
-                  Resume
+                <Button variant="hero" size="sm" className="w-full" asChild>
+                  <a href="https://drive.google.com/file/d/1aMemj8RLIIIbuNeXbrPxPvAf0OPSO1BS/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                    <Download className="w-4 h-4" />
+                    Resume
+                  </a>
                 </Button>
               </div>
             </div>
