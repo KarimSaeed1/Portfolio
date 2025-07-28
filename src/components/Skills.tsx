@@ -9,37 +9,37 @@ const Skills = () => {
       icon: <Code className="w-6 h-6" />,
       title: "Programming Languages",
       color: "tech-blue",
-      skills: ["JavaScript", "TypeScript", "Node.js", "PHP", "Python", "C++", "HTML5", "CSS3", "Java", "Dart"]
+      skills: ["JavaScript", "TypeScript", "Node.js", "PHP", "Python", "C++", "HTML5", "CSS3", "React"]
     },
     {
       icon: <Cog className="w-6 h-6" />,
       title: "Frameworks & Libraries", 
       color: "success",
-      skills: ["Express.js", "Nest.js", "Laravel", "React.js", "Socket.IO", "Apollo GraphQL", "Prisma", "Mongoose", "Flutter", "Next.js"]
+      skills: ["Express.js", "Nest.js", "Laravel", "React.js", "Socket.IO", "Apollo GraphQL", "Prisma", "Mongoose", "Flutter", "Vue.js"]
     },
     {
       icon: <Database className="w-6 h-6" />,
       title: "Databases & Query Languages",
       color: "tech-purple", 
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "GraphQL", "NoSQL", "SQL", "Redis", "Firebase Firestore"]
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "GraphQL", "NoSQL", "SQL", "Firebase"]
     },
     {
       icon: <Cloud className="w-6 h-6" />,
       title: "DevOps & Cloud Services",
       color: "tech-orange",
-      skills: ["AWS Cloud Services", "Docker", "Firebase", "CI/CD", "Apache", "Git & GitHub", "Linux", "Vercel", "Heroku"]
+      skills: ["AWS Cloud Services", "Docker", "Firebase", "CI/CD", "Apache", "Git & GitHub", "NPM", "Composer"]
     },
     {
       icon: <Wrench className="w-6 h-6" />,
       title: "Development Tools & Testing",
       color: "warning",
-      skills: ["Visual Studio", "VS Code", "Postman", "Unit Testing", "Jest", "Mocha", "NPM", "Composer", "Android Studio", "RESTful APIs"]
+      skills: ["Visual Studio", "VS Code", "Postman", "Unit Testing", "WebSocket", "Microsoft Office Suite", "Debugging"]
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Soft Skills & Methodologies",
+      title: "Computer Science & Methodologies",
       color: "destructive",
-      skills: ["Problem Solving", "Agile Development", "Software Design", "OOP", "Design Patterns", "Team Leadership", "Creative Thinking", "Project Management"]
+      skills: ["Data Structure", "Algorithms", "Problem Solving", "Agile", "Software Design", "OOP", "Design Patterns", "Creative Thinking", "Database Design"]
     }
   ];
 
@@ -69,7 +69,7 @@ const Skills = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="bg-primary/10 text-foreground hover:bg-primary/20 transition-colors text-xs font-medium border border-primary/20">
+                    <Badge key={skillIndex} variant="secondary" className="bg-primary/20 text-foreground hover:bg-primary/30 transition-colors text-xs font-medium border border-primary/30 dark:bg-primary/30 dark:text-primary-foreground dark:hover:bg-primary/40">
                       {skill}
                     </Badge>
                   ))}

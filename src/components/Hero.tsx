@@ -12,10 +12,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-20"></div>
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-tech-purple/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+      {/* Background Effects - Will be moved to global layout */}
 
       <div className="container mx-auto px-4 z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -82,7 +79,7 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-primary p-1 animate-glow">
                 <div className="w-full h-full rounded-full bg-background p-2">
                   <img
-                    src="/lovable-uploads/9653b0df-5a73-4b83-b168-335bd7224118.png"
+                    src="/lovable-uploads/ea3ea659-684f-4f53-973a-f6bbf5a304c8.png"
                     alt="Karim Saeed Elrashidy"
                     className="w-full h-full object-cover rounded-full"
                   />
