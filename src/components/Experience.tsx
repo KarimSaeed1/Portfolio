@@ -124,13 +124,13 @@ const Experience = () => {
               {/* Technologies */}
               <div>
                 <h4 className="text-lg font-semibold mb-4">Technologies & Tools:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {experience.technologies.map((tech, index) => (
-                    <Badge key={index} variant="secondary" className="bg-accent/50 hover:bg-accent transition-colors">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
+                  <div className="flex flex-wrap gap-2">
+                    {experience.technologies.map((tech, index) => (
+                      <Badge key={index} variant="secondary" className="bg-primary/20 text-foreground hover:bg-primary/30 transition-colors text-xs font-medium border border-primary/30 dark:bg-primary/30 dark:text-primary-foreground dark:hover:bg-primary/40">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
               </div>
             </CardContent>
           </Card>
