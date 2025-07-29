@@ -53,10 +53,13 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center">
-          <p className="text-muted-foreground flex items-center justify-center gap-1">
-            © {currentYear} Karim Saeed Elrashidy. Made with 
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-            using React & TypeScript
+          <p className="text-muted-foreground flex items-center justify-center gap-1 flex-wrap px-4 text-center">
+            <span>© {currentYear} Karim Saeed Elrashidy.</span>
+            <span className="flex items-center gap-1">
+              Made with 
+              <Heart className="w-4 h-4 text-red-500 fill-current" />
+              using React & TypeScript
+            </span>
           </p>
         </div>
       </div>

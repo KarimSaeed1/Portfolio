@@ -11,11 +11,11 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-16 sm:py-0">
       {/* Background Effects - Will be moved to global layout */}
 
       <div className="container mx-auto px-4 z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left animate-slideInLeft">
             <div className="flex items-center justify-center lg:justify-start gap-2 text-primary-glow mb-4">
@@ -33,7 +33,7 @@ const Hero = () => {
               Backend Developer @SQM Company
             </p>
             
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
               4+ years of experience designing, building, and optimizing scalable server-side solutions. 
               Proficient in Node.js, Express.js, MongoDB, PostgreSQL, and cloud technologies.
             </p>
@@ -76,7 +76,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-slideInRight">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-primary p-1 animate-glow">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-primary p-1 animate-glow">
                 <div className="w-full h-full rounded-full bg-background p-2">
                   <img
                     src="/lovable-uploads/ea3ea659-684f-4f53-973a-f6bbf5a304c8.png"
