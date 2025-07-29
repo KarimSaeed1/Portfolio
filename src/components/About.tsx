@@ -82,10 +82,10 @@ const About = () => {
           {/* Highlights Grid */}
           <div className="grid gap-6 animate-slideInRight">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="glass-effect hover:shadow-card transition-all duration-300 group">
+              <Card key={index} className="glass-effect hover:shadow-card transition-all duration-300 group hover-lift animate-fadeInUp" style={{animationDelay: `${index * 0.1}s`}}>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className={`p-3 rounded-lg bg-${highlight.color}/20 text-${highlight.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`p-3 rounded-lg bg-${highlight.color}/20 text-${highlight.color} group-hover:scale-110 transition-transform duration-300 hover-scale`}>
                       {highlight.icon}
                     </div>
                     <div>

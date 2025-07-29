@@ -66,10 +66,10 @@ const Contact = () => {
             {/* Contact Cards */}
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
-                <Card key={index} className="glass-effect hover:shadow-card transition-all duration-300 group">
+                <Card key={index} className="glass-effect hover:shadow-card transition-all duration-300 group hover-lift animate-slideInLeft" style={{animationDelay: `${index * 0.1}s`}}>
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4">
-                      <div className={`p-3 rounded-lg bg-${info.color}/20 text-${info.color} group-hover:scale-110 transition-transform duration-300`}>
+                      <div className={`p-3 rounded-lg bg-${info.color}/20 text-${info.color} group-hover:scale-110 transition-transform duration-300 hover-scale`}>
                         {info.icon}
                       </div>
                       <div>
@@ -124,14 +124,14 @@ const Contact = () => {
                 </p>
                 
                 <div className="space-y-4">
-                  <Button variant="hero" size="lg" className="w-full animate-glow" asChild>
+                  <Button variant="hero" size="lg" className="w-full animate-glow hover-scale" asChild>
                     <a href="mailto:karimsaeed816@gmail.com">
                       <Send className="w-5 h-5" />
                       Send Email Message
                     </a>
                   </Button>
                   
-                  <Button variant="tech" size="lg" className="w-full" asChild>
+                  <Button variant="tech" size="lg" className="w-full hover-scale" asChild>
                     <a href="https://wa.me/201550527057" target="_blank" rel="noopener noreferrer">
                       <Phone className="w-5 h-5" />
                       Schedule WhatsApp Call

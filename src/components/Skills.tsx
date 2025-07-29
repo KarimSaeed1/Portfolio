@@ -59,17 +59,17 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="glass-effect hover:shadow-card transition-all duration-300 group animate-fadeInUp" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={index} className="glass-effect hover:shadow-card transition-all duration-300 group hover-lift animate-zoomIn" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className={`p-3 rounded-lg bg-${category.color}/20 text-${category.color} group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`p-3 rounded-lg bg-${category.color}/20 text-${category.color} group-hover:scale-110 transition-transform duration-300 hover-scale`}>
                     {category.icon}
                   </div>
                   <h3 className="font-semibold text-lg">{category.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="bg-primary/20 text-foreground hover:bg-primary/30 transition-colors text-xs font-medium border border-primary/30 dark:bg-primary/30 dark:text-primary-foreground dark:hover:bg-primary/40">
+                    <Badge key={skillIndex} variant="secondary" className="bg-primary/20 text-foreground hover:bg-primary/30 transition-colors text-xs font-medium border border-primary/30 dark:bg-primary/30 dark:text-primary-foreground dark:hover:bg-primary/40 hover-scale">
                       {skill}
                     </Badge>
                   ))}

@@ -388,26 +388,26 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <Card 
               key={index} 
-              className="glass-effect hover:shadow-card transition-all duration-300 group animate-fadeInUp"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="glass-effect hover:shadow-card transition-all duration-300 group hover-lift animate-fadeInUp"
+              style={{ animationDelay: `${index * 0.05}s` }}
             >
               <CardContent className="p-6">
                 {/* Project Header */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-muted-foreground" />
+                    <Calendar className="w-4 h-4 text-muted-foreground hover-scale" />
                     <span className="text-sm text-muted-foreground">{project.year}</span>
                   </div>
                   <div className="flex gap-2">
                     {project.live && (
-                      <Button variant="ghost" size="icon" className="h-8 w-8 opacity-70 hover:opacity-100" asChild>
+                      <Button variant="ghost" size="icon" className="h-8 w-8 opacity-70 hover:opacity-100 hover-scale" asChild>
                         <a href={project.live} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4" />
                         </a>
                       </Button>
                     )}
                     {project.github && (
-                      <Button variant="ghost" size="icon" className="h-8 w-8 opacity-70 hover:opacity-100" asChild>
+                      <Button variant="ghost" size="icon" className="h-8 w-8 opacity-70 hover:opacity-100 hover-scale" asChild>
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4" />
                         </a>
@@ -417,7 +417,7 @@ const Projects = () => {
                 </div>
 
                 {/* Project Title & Description */}
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary-glow transition-colors">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary-glow transition-colors hover-scale">
                   {project.title}
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
@@ -426,7 +426,7 @@ const Projects = () => {
 
                 {/* Impact Badge */}
                 <div className="mb-4">
-                  <Badge variant="outline" className="border-success/30 text-success bg-success/10">
+                  <Badge variant="outline" className="border-success/30 text-success bg-success/10 hover-scale">
                     <Zap className="w-3 h-3 mr-1" />
                     {project.impact}
                   </Badge>
@@ -435,12 +435,12 @@ const Projects = () => {
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-1 mb-4">
                   {project.technologies.slice(0, 4).map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="text-xs bg-primary/20 dark:bg-primary/30 dark:text-primary-foreground">
+                    <Badge key={techIndex} variant="secondary" className="text-xs bg-primary/20 dark:bg-primary/30 dark:text-primary-foreground hover-scale">
                       {tech}
                     </Badge>
                   ))}
                   {project.technologies.length > 4 && (
-                    <Badge variant="secondary" className="text-xs bg-muted/50">
+                    <Badge variant="secondary" className="text-xs bg-muted/50 hover-scale">
                       +{project.technologies.length - 4}
                     </Badge>
                   )}
@@ -449,7 +449,7 @@ const Projects = () => {
                 {/* Action Buttons */}
                 <div className="flex gap-2">
                   {project.live && (
-                    <Button variant="tech" size="sm" className="flex-1" asChild>
+                    <Button variant="tech" size="sm" className="flex-1 hover-scale" asChild>
                       <a href={project.live} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4" />
                         Live Demo
