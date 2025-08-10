@@ -8,7 +8,7 @@ const Experience = () => {
     company: "SQM Company",
     position: "Backend Developer",
     duration: "Aug 2021 – Present",
-    location: "Suez, Egypt",
+    location: "Saudi Arabia and working remotely from Egypt",
     type: "Full-time",
     description: "4 years of experience designing, building, and optimizing scalable backend systems for enterprise applications, real-time platforms, and cloud-based solutions.",
     achievements: [
