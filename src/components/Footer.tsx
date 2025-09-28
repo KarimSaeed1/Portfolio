@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold text-gradient mb-2">Karim Saeed</h3>
-            <p className="text-muted-foreground">Backend Software Engineer</p>
+            <p className="text-muted-foreground">Software Engineer</p>
             <p className="text-sm text-muted-foreground">Building scalable solutions</p>
           </div>
 

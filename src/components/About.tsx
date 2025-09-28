@@ -56,7 +56,7 @@ const About = () => {
           <div className="animate-slideInLeft">
             <h3 className="text-2xl font-bold mb-6">4+ Years Professional Experience</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              I'm a Backend Developer with extensive hands-on experience designing, building, and optimizing 
+              I'm a Software Engineer with extensive hands-on experience designing, building, and optimizing 
               scalable server-side solutions. My expertise spans Node.js, Express.js, Nest.js, MongoDB, 
               PostgreSQL, RESTful APIs, and GraphQL, with advanced skills in database design, cloud services, 
               and real-time systems.

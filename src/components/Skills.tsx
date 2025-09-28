@@ -15,7 +15,7 @@ const Skills = () => {
       icon: <Cog className="w-6 h-6" />,
       title: "Frameworks & Libraries", 
       color: "success",
-      skills: ["Node.js", "Express.js", "Nest.js", "Laravel", "Socket.IO", "Prisma", "Mongoose"]
+      skills: ["Node.js", "React.js", "Express.js", "Nest.js", "Laravel", "Socket.IO", "Prisma", "Mongoose"]
     },
     {
       icon: <Database className="w-6 h-6" />,
@@ -27,13 +27,13 @@ const Skills = () => {
       icon: <Cloud className="w-6 h-6" />,
       title: "DevOps & Cloud Services",
       color: "tech-orange",
-      skills: ["AWS Cloud Services", "Docker", "Firebase", "CI/CD", "Git & GitHub"]
+      skills: ["AWS Cloud Services", "Docker", "Firebase", "CI/CD", "Git & GitHub", "Linux"]
     },
     {
       icon: <Wrench className="w-6 h-6" />,
       title: "Development Tools & Testing",
       color: "warning",
-      skills: ["Visual Studio", "VS Code", "Postman", "Unit Testing", "Microsoft Office Suite", "Debugging"]
+      skills: ["Visual Studio", "VS Code", "Postman", "Unit Testing", "Microsoft Office Suite", "Debugging", "Claude & ChatGpt"]
     },
     {
       icon: <Users className="w-6 h-6" />,

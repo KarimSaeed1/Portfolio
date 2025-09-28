@@ -20,22 +20,21 @@ const Hero = () => {
           <div className="text-center lg:text-left animate-slideInLeft">
             <div className="flex items-center justify-center lg:justify-start gap-2 text-primary-glow mb-4">
               <MapPin className="w-4 h-4" />
-              <span className="text-sm font-medium">Suez, Egypt</span>
+              <span className="text-sm font-medium">Cairo, Egypt</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient">Backend</span>
+              <span className="text-gradient">Mid-Senior</span>
               <br />
               <span className="text-foreground">Software Engineer</span>
             </h1>
             
             <p className="text-xl text-muted-foreground mb-4">
-              Backend Developer @SQM Company
+              Mid-Senior Software Engineer @3Pillars Companies
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
-              4+ years of experience designing, building, and optimizing scalable server-side solutions. 
-              Proficient in Node.js, Express.js, MongoDB, PostgreSQL, and cloud technologies.
+              I'm a Software Engineer with 4 years of hands-on experience designing, building, and optimizing scalable server-side solutions. Proficient in Node.js, React.js, Express.js, Nest.js, MongoDB, PostgreSQL, RESTful APIs, and GraphQL, with advanced skills in database design (SQL/NoSQL), cloud services (AWS), and real-time systems (Socket.IO). Strong foundation in software architecture, performance optimization, and secure API development, demonstrated through 15+ projects spanning e-commerce, HR systems, real estate platforms, and enterprise workflow automation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">

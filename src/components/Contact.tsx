@@ -24,7 +24,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      value: "Suez, Egypt",
+      value: "Cairo, Egypt",
       link: "https://www.google.com/maps/place/Suez,+Egypt",
       color: "tech-purple"
     }
