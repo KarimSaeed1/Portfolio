@@ -10,6 +10,16 @@ const Projects = () => {
   const projects = [
     // Enterprise Projects
     {
+      title: "Newshunt",
+      description: "Intelligent News Discovery Platform aggregating articles from trusted sources. Features automated web scrapers, OpenSearch indexing, Redis caching, and sentiment tagging for personalized content.",
+      technologies: ["Node.js", "Web Scraping", "OpenSearch", "Redis", "Express.js", "MySQL", "Sequelize"],
+      category: "enterprise",
+      live: "https://newshunt.io/ar",
+      github: null,
+      impact: "Personalized content discovery",
+      year: "2025"
+    },
+    {
       title: "Ayat Workflow",
       description: "Robust workflow management platform designed to handle and orchestrate complex processes across various task types and operational flows. Reduced process time by 40%.",
       technologies: ["Node.js", "Express.js", "GraphQL", "PostgreSQL", "Prisma", "TypeScript"],
@@ -386,8 +396,8 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="glass-effect hover:shadow-card transition-all duration-300 group hover-lift animate-fadeInUp"
               style={{ animationDelay: `${index * 0.05}s` }}
             >

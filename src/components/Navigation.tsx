@@ -60,11 +60,10 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
-                    activeSection === item.id
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === item.id
                       ? 'text-primary-glow bg-primary/20'
                       : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
@@ -76,7 +75,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center gap-2">
             <ThemeToggle />
             <Button variant="hero" size="sm" className="animate-glow" asChild>
-              <a href="https://drive.google.com/file/d/1G0kDp3m7aZOUl33Z8jaSniUepRrD2tU_/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1RFTjsVxmretzeyuBNjS0CAaR_WXiUqWs/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
                 <Download className="w-4 h-4" />
                 Resume
               </a>
@@ -104,11 +103,10 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors duration-300 ${
-                    activeSection === item.id
+                  className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors duration-300 ${activeSection === item.id
                       ? 'text-primary-glow bg-primary/20'
                       : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
