@@ -46,6 +46,20 @@ const Certificates = () => {
       year: "2021",
       type: "Digital Marketing",
       status: "Completed"
+    },
+    {
+      title: "AWS Technical Essentials",
+      issuer: "AWS Training and Certification",
+      year: "2026",
+      type: "Cloud Computing",
+      status: "Completed"
+    },
+    {
+      title: "Vibe Coding: AI-Driven Software Development and Testing",
+      issuer: "Udemy",
+      year: "2026",
+      type: "AI & Software Development",
+      status: "Completed"
     }
   ];
 
@@ -61,6 +75,10 @@ const Certificates = () => {
         return 'tech-orange';
       case 'programming':
         return 'primary';
+      case 'cloud computing':
+        return 'tech-orange';
+      case 'ai & software development':
+        return 'tech-purple';
       default:
         return 'warning';
     }

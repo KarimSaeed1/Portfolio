@@ -5,9 +5,28 @@ import { Building, Calendar, MapPin } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
-      {
+    {
+      company: "3Pillars Companies",
+      position: "Senior Software Engineer",
+      duration: "Sep 2025 – Present",
+      location: "Cairo, Egypt",
+      type: "Full-time",
+      about: "In a fast moving and changing tech-market, we are always working together to offer our customers solutions that support their business models and reinforces their performance and positioning in their markets. Our companies play a great role in this journey with our customers as our technology backbones to seamless innovation and creation to deliver end-to-end solutions.",
+      description: "Collaborated with a talented team to design and build scalable systems, such as the News-Hunt platform in Pakistan, Saudi Arabia, and the UAE, using technologies including Node.js, Express.js, PostgreSQL, Sequelize, AWS, Redis, and RabbitMQ, with a focus on high performance and system optimization across diverse domains.",
+      achievements: [
+        "System Design & Architecture – Developed modular, testable, and scalable backend systems using TypeScript, Sequalize ORM, and unit testing (Jest, Mocha)",
+        "Cloud & DevOps – Deployed CI/CD pipelines (Git, Docker, Kubernetes) and cloud services (AWS S3) for high-availability applications",
+        "Delivered high-quality, reusable components and scalable services using React.js, ensuring optimized performance, responsive design, and seamless integration with backend APIs to enhance user experience and maintainability"
+      ],
+      technologies: [
+        "Node.js", "Express.js", "TypeScript", "JavaScript", "PostgreSQL",
+        "Sequelize", "AWS", "Redis", "RabbitMQ", "React.js",
+        "Docker", "Kubernetes", "Git", "Jest", "Mocha"
+      ]
+    },
+    {
       company: "SQM Company",
-      position: "Junior Backend developer",
+      position: "Backend Developer",
       duration: "Aug 2022 – Sep 2025",
       location: "Saudi Arabia and working remotely from Egypt",
       type: "Full-time",
@@ -41,25 +60,6 @@ const Experience = () => {
         "Node.js", "Express.js", "Nest.js", "TypeScript", "JavaScript",
         "MongoDB", "PostgreSQL", "MySQL", "GraphQL", "RESTful APIs",
         "AWS", "Docker", "Git", "Jest", "Mocha", "Socket.IO", "Prisma"
-      ]
-    },
-    {
-      company: "3Pillars Companies",
-      position: "Mid-Senior Software Engineer",
-      duration: "Sep 2025 – Present",
-      location: "Cairo, Egypt",
-      type: "Full-time",
-      about: "In a fast moving and changing tech-market, we are always working together to offer our customers solutions that support their business models and reinforces their performance and positioning in their markets. Our companies play a great role in this journey with our customers as our technology backbones to seamless innovation and creation to deliver end-to-end solutions.",
-      description: "Collaborated with a talented team to design and build scalable systems, such as the News-Hunt platform in Pakistan, Saudi Arabia, and the UAE, using technologies including Node.js, Express.js, MySQL, Sequelize, AWS, Redis, and RabbitMQ, with a focus on high performance and system optimization across diverse domains.",
-      achievements: [
-        "System Design & Architecture – Developed modular, testable, and scalable backend systems using TypeScript, Sequalize ORM, and unit testing (Jest, Mocha)",
-        "Cloud & DevOps – Deployed CI/CD pipelines (Git, Docker, Kubernetes) and cloud services (AWS S3) for high-availability applications",
-        "Delivered high-quality, reusable components and scalable services using React.js, ensuring optimized performance, responsive design, and seamless integration with backend APIs to enhance user experience and maintainability"
-      ],
-      technologies: [
-        "Node.js", "Express.js", "TypeScript", "JavaScript", "MySQL",
-        "Sequelize", "AWS", "Redis", "RabbitMQ", "React.js",
-        "Docker", "Kubernetes", "Git", "Jest", "Mocha"
       ]
     }
   ];

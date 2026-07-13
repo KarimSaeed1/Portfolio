@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: "Newshunt",
       description: "Intelligent News Discovery Platform aggregating articles from trusted sources. Features automated web scrapers, OpenSearch indexing, Redis caching, and sentiment tagging for personalized content.",
-      technologies: ["Node.js", "Web Scraping", "OpenSearch", "Redis", "Express.js", "MySQL", "Sequelize"],
+      technologies: ["Node.js", "Web Scraping", "OpenSearch", "Redis", "Express.js", "PostgreSQL", "Sequelize"],
       category: "enterprise",
       live: "https://newshunt.io/ar",
       github: null,
@@ -31,12 +31,12 @@ const Projects = () => {
     },
     {
       title: "Ayat LIMS",
-      description: "Laboratory Information Management System to streamline laboratory operations, sample tracking, and data management with 60% efficiency improvement.",
+      description: "Laboratory Information Management System to streamline laboratory operations, enabling efficient tracking of samples, experiments, results, and related data.",
       technologies: ["Node.js", "Express.js", "GraphQL", "Apollo", "TypeScript", "PostgreSQL", "Prisma"],
       category: "enterprise",
       live: "https://test-lims-test-setup-front.vercel.app/auth/login",
       github: null,
-      impact: "60% efficiency improvement",
+      impact: "Enhanced accuracy & data management",
       year: "2024"
     },
     {
@@ -61,7 +61,7 @@ const Projects = () => {
     },
     {
       title: "Ayat Portal",
-      description: "Secure centralized user management platform to manage user accounts, permissions, and licenses across network of websites.",
+      description: "Secure centralized user management platform to manage user accounts, permissions, and licenses across network of websites, with Multi-Factor Authentication (MFA) for enhanced security.",
       technologies: ["Node.js", "Express.js", "MongoDB", "Socket.IO", "AWS S3"],
       category: "enterprise",
       live: "https://dev-ayt-portal-user-management-front.vercel.app/login",
@@ -71,12 +71,12 @@ const Projects = () => {
     },
     {
       title: "LIMS Portal",
-      description: "Secure centralized user management platform for Laboratory Information Management System with license-based access control.",
+      description: "Secure centralized user management platform for Laboratory Information Management System with license-based access control, centralizing lab data management.",
       technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose", "AWS S3", "Socket.IO"],
       category: "enterprise",
       live: "https://dev-lims-portal-user-management-front.vercel.app/",
       github: null,
-      impact: "Multi-system integration",
+      impact: "60% efficiency improvement",
       year: "2024"
     },
     {
@@ -165,6 +165,16 @@ const Projects = () => {
       live: "https://dev-mlnc-admin-front.vercel.app/#",
       github: null,
       impact: "Streamlined operations",
+      year: "2024"
+    },
+    {
+      title: "MLNC E-Commerce Store",
+      description: "Integrated industrial platform featuring an e-store with centralized admin panel management, part of the wider MLNC ecosystem of interconnected sites.",
+      technologies: ["Node.js", "Express.js", "MongoDB", "Unit Testing"],
+      category: "industrial",
+      live: null,
+      github: null,
+      impact: "Unified control interface",
       year: "2024"
     },
     {
@@ -374,7 +384,7 @@ const Projects = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive showcase of 32+ enterprise-grade applications and scalable solutions
+            A comprehensive showcase of 33+ enterprise-grade applications and scalable solutions
           </p>
         </div>
 
@@ -481,8 +491,8 @@ const Projects = () => {
         {/* Statistics */}
         <div className="mt-16 grid md:grid-cols-2 gap-6 animate-fadeInUp">
           {[
-            { number: "32+", label: "Projects Completed", icon: <Zap className="w-6 h-6" /> },
-            { number: "4+", label: "Years Experience", icon: <Calendar className="w-6 h-6" /> }
+            { number: "33+", label: "Projects Completed", icon: <Zap className="w-6 h-6" /> },
+            { number: "5+", label: "Years Experience", icon: <Calendar className="w-6 h-6" /> }
           ].map((stat, index) => (
             <Card key={index} className="glass-effect text-center">
               <CardContent className="p-6">

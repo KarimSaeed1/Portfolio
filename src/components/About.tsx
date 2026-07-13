@@ -32,8 +32,8 @@ const About = () => {
   ];
 
   const achievements = [
-    "4+ Years Professional Experience",
-    "15+ Successful Projects Delivered", 
+    "5+ Years Professional Experience",
+    "15+ Successful Projects Delivered",
     "40% Process Time Reduction (Ayat Workflow)",
     "5M+ Concurrent Users Handled (Refee E-Commerce)",
     "60% Efficiency Improvement (LIMS Portal)"
@@ -54,18 +54,19 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Profile Info */}
           <div className="animate-slideInLeft">
-            <h3 className="text-2xl font-bold mb-6">4+ Years Professional Experience</h3>
+            <h3 className="text-2xl font-bold mb-6">5+ Years Professional Experience</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              I'm a Software Engineer with extensive hands-on experience designing, building, and optimizing 
-              scalable server-side solutions. My expertise spans Node.js, Express.js, Nest.js, MongoDB, 
-              PostgreSQL, RESTful APIs, and GraphQL, with advanced skills in database design, cloud services, 
-              and real-time systems.
+              I'm a Senior Software Engineer with 5 years of experience building and scaling systems and
+              backend infrastructure. My expertise centers on the Node.js ecosystem (Express.js, Nest.js),
+              with deep skills in software architecture, secure API development, and database management
+              across SQL and NoSQL systems.
             </p>
-            
+
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Throughout my career, I've demonstrated a strong foundation in software architecture, performance 
-              optimization, and secure API development through numerous projects spanning e-commerce, HR systems, 
-              real estate platforms, and enterprise workflow automation.
+              I've deployed resilient microservices using Redis, RabbitMQ, Kubernetes, and AWS across diverse
+              platforms — including e-commerce, supply chain, financial systems, HR, inventory management,
+              real estate, workflow engines, task management, LIMS, and news discovery — with proven capability
+              in engineering highly interactive, real-time systems utilizing Socket.IO.
             </p>
 
             <div className="space-y-3">
@@ -120,9 +121,9 @@ const About = () => {
                   <div className="space-y-2">
                     {[
                       "CS50: Computer Science Courses (Harvard)",
-                      "Complete Node.js Developer Course (Udemy)",
-                      "Programming for Everybody - Python (Coursera)",
-                      "Digital Marketing Nanodegree (Udacity)"
+                      "AWS Technical Essentials",
+                      "Vibe Coding: AI-Driven Software Development and Testing",
+                      "Complete Node.js Developer Course (Udemy)"
                     ].map((cert, index) => (
                       <div key={index} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>

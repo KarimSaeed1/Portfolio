@@ -25,7 +25,7 @@ const Contact = () => {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
       value: "Cairo, Egypt",
-      link: "https://www.google.com/maps/place/Suez,+Egypt",
+      link: "https://www.google.com/maps/place/Cairo,+Egypt",
       color: "tech-purple"
     }
   ];

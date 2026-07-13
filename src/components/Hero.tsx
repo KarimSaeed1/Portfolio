@@ -24,17 +24,17 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient">Mid-Senior</span>
+              <span className="text-gradient">Senior</span>
               <br />
               <span className="text-foreground">Software Engineer</span>
             </h1>
-            
+
             <p className="text-xl text-muted-foreground mb-4">
-              Mid-Senior Software Engineer @3Pillars Companies
+              Senior Software Engineer @3Pillars Companies
             </p>
-            
+
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
-              I'm a Software Engineer with 4 years of hands-on experience designing, building, and optimizing scalable server-side solutions. Proficient in Node.js, React.js, Express.js, Nest.js, MongoDB, PostgreSQL, RESTful APIs, and GraphQL, with advanced skills in database design (SQL/NoSQL), cloud services (AWS), and real-time systems (Socket.IO). Strong foundation in software architecture, performance optimization, and secure API development, demonstrated through 15+ projects spanning e-commerce, HR systems, real estate platforms, and enterprise workflow automation.
+              Senior Software Engineer with 5 years of experience building and scaling systems and backend infrastructure. Specialized in the Node.js ecosystem (Express.js, Nest.js) with deep expertise in software architecture, secure API development, and database management (SQL/NoSQL). Experienced in deploying resilient microservices using Redis, RabbitMQ, Kubernetes, and AWS across diverse platforms, including e-commerce, supply chain, financial systems, HR, inventory management, real estate, workflow engines, task management, LIMS, and news discovery. Proven capability in engineering highly interactive, real-time systems utilizing Socket.IO.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -78,7 +78,7 @@ const Hero = () => {
               <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-primary p-1 animate-glow">
                 <div className="w-full h-full rounded-full bg-background p-2">
                   <img
-                    src="/lovable-uploads/ea3ea659-684f-4f53-973a-f6bbf5a304c8.png"
+                    src="/lovable-uploads/karim-profile.jpeg"
                     alt="Karim Saeed Elrashidy"
                     className="w-full h-full object-cover rounded-full"
                   />

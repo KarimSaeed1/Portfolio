@@ -75,7 +75,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center gap-2">
             <ThemeToggle />
             <Button variant="hero" size="sm" className="animate-glow" asChild>
-              <a href="https://drive.google.com/file/d/1RFTjsVxmretzeyuBNjS0CAaR_WXiUqWs/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1T1zr7PE4E2qAlapvvjNMZwDDQQUnH_Mc/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
                 <Download className="w-4 h-4" />
                 Resume
               </a>
@@ -113,7 +113,7 @@ const Navigation = () => {
               ))}
               <div className="pt-2">
                 <Button variant="hero" size="sm" className="w-full" asChild>
-                  <a href="https://drive.google.com/file/d/1aMemj8RLIIIbuNeXbrPxPvAf0OPSO1BS/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                  <a href="https://drive.google.com/file/d/1T1zr7PE4E2qAlapvvjNMZwDDQQUnH_Mc/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
                     <Download className="w-4 h-4" />
                     Resume
                   </a>
